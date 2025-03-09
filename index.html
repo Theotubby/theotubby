@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <link rel="stylesheet" href="assets/home/css/body.css">
+        <link rel="stylesheet" href="assets/home/css/header.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/avenir');
+        </style>
+
+        <title>Theotubby</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-background"></div>
+
+            <div id="header-container">
+                
+                <input type="checkbox" class="day-night-button" id="mode-checkbox">
+                <label class="day-night-button" for="mode-checkbox" id="mode-button">
+                    <span id="moon-icon">&#xf186;</span> 
+                    <span id="sun-icon">&#xf185;</span> 
+                </label>
+
+                <h2 class="main-title">T H E O T U B B Y</h2>
+
+                <div class="button-container" id="navi-button-container">
+                    <button class="navi-button" id="blog-button">
+                        <h2 class="navi-font">AKTUELLES</h2>
+                        <div class="navi-underline"></div>
+                    </button>
+        
+                    <button class="navi-button" id="project-button">
+                        <h2 class="navi-font">PROJEKTE</h2>
+                        <div class="navi-underline"></div>
+                    </button>
+        
+                    <button class="navi-button" id="aboutme-button">
+                        <h2 class="navi-font">ÜBER MICH</h2>
+                        <div class="navi-underline"></div>
+                    </button>
+        
+                    <button class="navi-button" id="contact-button">
+                        <h2 class="navi-font">KONTAKT</h2>
+                        <div class="navi-underline"></div>
+                    </button>
+                </div>
+
+                <div id="navi-dropdown">
+                    <input type="checkbox" id="navi-dropdown-checkbox">
+                    <label for="navi-dropdown-checkbox" id="navi-dropdown-button">
+                        <span id="dropdown-icon">☰</span> 
+                    </label>
+
+                    <div id="navi-dropdown-buttons-container">
+
+                        <div class="header-background"></div>
+
+                        <button class="dropdown-buttons" id="dropdown-blog-button">
+                            <h2 class="navi-font">AKTUELLES</h2>
+                            <div class="navi-underline"></div>
+                        </button>
+            
+                        <button class="dropdown-buttons" id="dropdown-project-button">
+                            <h2 class="navi-font">PROJEKTE</h2>
+                            <div class="navi-underline"></div>
+                        </button>
+            
+                        <button class="dropdown-buttons" id="dropdown-aboutme-button">
+                            <h2 class="navi-font">ÜBER MICH</h2>
+                            <div class="navi-underline"></div>
+                        </button>
+            
+                        <button class="dropdown-buttons" id="dropdown-contact-button">
+                            <h2 class="navi-font">KONTAKT</h2>
+                            <div class="navi-underline"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div id="main-content-1">
+            <div id="image-container">
+                <img src="assets\home\pictures\ok.jpg" alt="THEOOOO">
+            </div>
+        </div>
+
+        <script src="assets\home\js\header.js"></script>
+
+    </body>
+</html>

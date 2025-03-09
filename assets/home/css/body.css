@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+    overflow: auto;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.no-animation{  /* cancle all animation at start */
+    animation: none !important;
+}

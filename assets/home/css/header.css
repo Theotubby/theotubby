@@ -1,0 +1,306 @@
+header{
+    background: none; 
+    position: fixed;
+    text-align: center;
+    height: 85px; 
+    width: 100%;
+    transition: height 0.2s linear;
+}
+
+header.smaller {
+    height: 60px;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(208, 208, 208);
+    z-index: -1;
+}
+
+.main-title{
+    user-select: none;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 28px;
+    margin: 0px;
+    transition: top 0.2s linear;
+}
+
+header.smaller .main-title{
+    top: 15px;
+}
+
+
+
+/* Darkmode-Button */
+.day-night-button{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    transition: top 0.2s linear;
+}
+
+#mode-checkbox{
+    user-select: none;
+    visibility: hidden;
+}
+
+#mode-button{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#moon-icon, #sun-icon {
+    user-select: none;
+    position: absolute;
+    margin: 0px;
+    font-family: 'FontAwesome';
+    display: inline-block;
+    transition: transform 1s ease-in-out, visibility 0s;
+}
+
+#sun-icon {
+    opacity: 0;
+    visibility: hidden; 
+}
+
+#mode-checkbox:checked + #mode-button #moon-icon {/* Mond verschwindet in mein Arsch*/
+    transform: rotate(180deg);
+    animation: hideVisibility 0.75s linear forwards;
+    pointer-events: none; 
+}
+
+#mode-checkbox:checked + #mode-button #sun-icon { /* Sonne erscheint*/
+    animation: showVisibility 0.75s linear forwards;
+    transform: rotate(180deg);
+    pointer-events: auto;
+}
+
+#mode-checkbox:not(:checked) + #mode-button #sun-icon{ /* Sonne verschwindet */
+    transform: rotate(-180deg);
+    animation: hideVisibility 0.75s linear forwards;
+    pointer-events: none;
+}
+
+#mode-checkbox:not(:checked) + #mode-button #moon-icon { /* Mond erscheint*/
+    animation: showVisibility 0.75s linear forwards;
+    transform: rotate(-360deg);
+    pointer-events: auto;
+}
+
+header.smaller .day-night-button{
+    top: 18px;
+
+}
+
+@keyframes hideVisibility { /* Zurücksetzen der Werte nach Animation */
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes showVisibility { /* Zurücksetzen der Werte nach Animation */
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+/* Navigation Horizontal*/
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navi-button{
+    user-select: none;
+    font-family: Avenir, sans-serif;
+    display: block;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    transition: top 0.2s linear;
+}
+
+.navi-font{
+    margin: 0; 
+}
+
+#blog-button{
+    margin-right: 680px;
+}
+
+#project-button{
+    margin-right: 400px;
+}
+
+#aboutme-button{
+    margin-left: 400px;
+}
+
+#contact-button{
+    margin-left: 680px;
+}
+
+.navi-underline{ 
+    transform-origin: center;
+    transform: scaleX(0);
+    margin: 0px;
+    height: 3px; 
+    background-color: black; 
+}
+
+header.smaller .navi-button{
+    top: 18px;
+}
+
+.navi-button:hover .navi-underline{
+    animation: widerunderline 0.15s linear forwards;
+}
+
+@keyframes widerunderline{
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+
+/* Navigation Vertical */
+#navi-dropdown{
+    display: none;
+    position: fixed;
+    top: 23.5px;
+    transition: top 0.2s linear;
+}
+
+#navi-dropdown-checkbox{
+    user-select: none;
+    position: fixed;
+    right: 38px;
+    margin-top: 15px;
+    visibility: hidden;
+}
+
+#navi-dropdown-button{
+    user-select: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    position: fixed;
+    right: 35px;
+}
+
+#navi-dropdown-buttons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    position: fixed;
+    overflow: hidden;
+    right: 0px;
+    top: 60px;
+    width: 100%;
+    height: 0px;
+}
+
+.dropdown-buttons{
+    font-family: Avenir, sans-serif;
+    background: none;
+    border: none;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#dropdown-blog-button{
+    margin-top: 30px;
+}
+
+#dropdown-contact-button{
+    margin-bottom: 20px;
+}
+
+/*
+.dropdown-buttons-underline{ 
+    transform-origin: right;
+    transform: scaleX(0);
+    margin: 0px;
+    height: 3px; 
+    background-color: black; 
+}
+
+.dropdown-buttons:hover .dropdown-buttons-underline{
+    animation: widerunderline 0.25s linear forwards;
+} */
+
+.dropdown-buttons:hover .navi-underline{
+    animation: widerunderline 0.15s linear forwards;
+}
+
+#navi-dropdown-checkbox:checked + #navi-dropdown-button + #navi-dropdown-buttons-container{
+    animation: dropdownopen 0.5s ease-in-out forwards;
+}
+
+#navi-dropdown-checkbox:not(:checked) + #navi-dropdown-button + #navi-dropdown-buttons-container{
+    animation: dropdownclose 0.5s ease-in-out forwards;
+}
+
+header.smaller #navi-dropdown{
+    top: 10px;
+}
+
+
+@keyframes dropdownopen {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100vh;
+    }
+}
+
+@keyframes dropdownclose {
+    0% {
+        height: 100vh;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+
+
+/* Standard-Styling für Navigation */
+@media (max-width: 940px) {
+    #navi-button-container{
+        display: none;
+    }
+
+    #navi-dropdown{
+        display: block;
+    }
+}
