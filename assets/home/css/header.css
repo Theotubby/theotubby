@@ -24,15 +24,22 @@ header.smaller {
 .main-title {
     user-select: none;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+    
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     top: clamp(20px, 3vh, 28px);
+    
     margin: 0;
     transition: top 0.2s linear;
-    font-size: clamp(14px, 2vw, 18px);
-    line-height: 1.2;
-    min-height: 22px;
+    
+    font-size: clamp(14px, 4vw, 18px); 
+    line-height: 1; 
+    min-height: 22px; 
+    
+    max-width: 90vw; 
 }
 
 header.smaller .main-title{
