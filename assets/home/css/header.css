@@ -21,25 +21,16 @@ header.smaller {
     z-index: -1;
 }
 
-.main-title {
+.main-title{
     user-select: none;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden; 
-    
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: clamp(20px, 3vh, 28px);
-    
-    margin: 0;
+    top: 28px;
+    margin: 0px;
     transition: top 0.2s linear;
-    
-    font-size: clamp(14px, 4vw, 18px); 
-    line-height: 1; 
-    min-height: 22px; 
-    
-    max-width: 90vw; 
 }
 
 header.smaller .main-title{
@@ -204,7 +195,7 @@ header.smaller .navi-button{
 #navi-dropdown{
     display: none;
     position: fixed;
-    top: 23.5px;
+    top: 22px;
     transition: top 0.2s linear;
 }
 
