@@ -1,0 +1,5 @@
+#image-container img {
+    width: 100%;  /* Nimmt die volle Breite des Containers */
+    height: 5000px; /* Höhe wird automatisch berechnet */
+    max-width: 500px; /* Maximale Breite von 500px */
+  }
