@@ -23,6 +23,7 @@ header.smaller {
 
 .main-title{
     user-select: none;
+    text-overflow: ellipsis;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);

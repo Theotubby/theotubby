@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: Avenir, sans-serif;
+    font-size: clamp(14px, 2vw, 18px);
     overflow: auto;
 }
 
