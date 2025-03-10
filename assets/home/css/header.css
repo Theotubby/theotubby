@@ -21,15 +21,18 @@ header.smaller {
     z-index: -1;
 }
 
-.main-title{
+.main-title {
     user-select: none;
     text-overflow: ellipsis;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: 28px;
-    margin: 0px;
+    top: clamp(20px, 3vh, 28px);
+    margin: 0;
     transition: top 0.2s linear;
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.2;
+    min-height: 22px;
 }
 
 header.smaller .main-title{
