@@ -5,6 +5,8 @@ header{
     height: 85px; 
     width: 100%;
     transition: height 0.2s linear;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 header.smaller {
