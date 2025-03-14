@@ -13,6 +13,16 @@ header.smaller {
     height: 60px;
 }
 
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(208, 208, 208);
+    z-index: -1;
+}
+
 .main-title{
     user-select: none;
     text-overflow: ellipsis;
