@@ -1,5 +1,8 @@
 html{
     background-color: rgb(208, 208, 208);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -8,11 +11,12 @@ html{
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
     font-family: Avenir Light, sans-serif;
     font-weight: 300;
     overflow: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body.no-scroll {
