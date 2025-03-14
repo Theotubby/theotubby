@@ -10,8 +10,12 @@ html{
 body{
     margin: 0px;
     padding: 0px;
+<<<<<<< HEAD
     font-family: Avenir Light, sans-serif;
     font-weight: 300;
+=======
+    font-family: Avenir, sans-serif;
+>>>>>>> parent of 664bc8e (font title)
     overflow: auto;
 }
 
