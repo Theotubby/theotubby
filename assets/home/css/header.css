@@ -2,8 +2,8 @@ header {
     background-color: rgb(208, 208, 208); /* Hintergrund direkt hier setzen */
     position: fixed;
     text-align: center;
-    height: 95px;
-    top: -10px;
+    height: 105px;
+    top: -20px;
     width: 100%;
     transition: height 0.2s linear;
     border-bottom: none;
@@ -12,7 +12,7 @@ header {
 }
 
 header.smaller {
-    height: 70px;
+    height: 80px;
 }
 
 .header-background {
@@ -142,7 +142,7 @@ header.smaller .day-night-button{
     background: none;
     border: none;
     position: absolute;
-    top: 40px;
+    top: 50px;
     cursor: pointer;
     transition: top 0.2s linear;
 }
@@ -177,7 +177,7 @@ header.smaller .day-night-button{
 }
 
 header.smaller .navi-button{
-    top: 28px;
+    top: 38px;
 }
 
 .navi-button:hover .navi-underline{
@@ -277,7 +277,7 @@ header.smaller .navi-button{
 }
 
 header.smaller #navi-dropdown{
-    top: 20px;
+    top: 30px;
 }
 
 
