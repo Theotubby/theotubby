@@ -2,20 +2,10 @@ html{
     background-color: rgb(208, 208, 208);
 }
 
-@font-face {
-    font-family: Avenir Light;
-    src: url('../../css/fonts/AvenirLTStd-Light.otf') format('opentype');
-}
-
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: Avenir Light, sans-serif;
+body {
+    font-family: "Avenir Light", "Avenir Next", "Avenir", sans-serif;
     font-weight: 300;
-    font-family: Avenir, sans-serif;
-    overflow: auto;
 }
-
 body.no-scroll {
     overflow: hidden;
 }
