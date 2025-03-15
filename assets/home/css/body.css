@@ -3,15 +3,14 @@ html{
 }
 
 @font-face {
-    font-family: AvenirLight;
-    src: url(avenir-light.woff) format('woff');
+    font-family: 'AvenirLight';
+    src: url(assets/font/AvenirLTStd-Light.otf);
 }
 
 body{
     margin: 0px;
     padding: 0px;
-    font-family: AvenirLight;
-    font-weight: 100;
+    font-family: "AvenirLight";
     overflow: auto;
 }
 
