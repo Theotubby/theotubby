@@ -30,6 +30,7 @@ header.smaller {
     text-overflow: ellipsis;
     white-space: nowrap;
     position: fixed;
+    font-family: Montserrat, sans-serif;
     left: 50%;
     transform: translateX(-50%);
     top: 28px;
@@ -137,7 +138,7 @@ header.smaller .day-night-button{
 
 .navi-button{
     user-select: none;
-    font-family: "Avenir Light", sans-serif;
+    font-family: Montserrat, sans-serif;
     display: block;
     background: none;
     border: none;
@@ -172,7 +173,7 @@ header.smaller .day-night-button{
     transform-origin: center;
     transform: scaleX(0);
     margin: 0px;
-    height: 3px; 
+    height: 2px; 
     background-color: black; 
 }
 
@@ -235,7 +236,7 @@ header.smaller .navi-button{
 }
 
 .dropdown-buttons{
-    font-family: "Avenir Light", sans-serif;
+    font-family: Montserrat, sans-serif;
     background: none;
     border: none;
     width: fit-content;
@@ -277,7 +278,7 @@ header.smaller .navi-button{
 }
 
 header.smaller #navi-dropdown{
-    top: 8px;
+    top: 10px;
 }
 
 
