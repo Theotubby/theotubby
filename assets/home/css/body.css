@@ -2,10 +2,15 @@ html{
     background-color: rgb(208, 208, 208);
 }
 
+@font-face {
+    font-family: AvenirLight;
+    src: url(avenir-light.woff) format('woff');
+}
+
 body{
     margin: 0px;
     padding: 0px;
-    font-family: "Avenir Light", "Avenir", sans-serif;
+    font-family: AvenirLight;
     font-weight: 100;
     overflow: auto;
 }
