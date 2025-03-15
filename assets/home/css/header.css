@@ -219,7 +219,6 @@ header.smaller .navi-button{
     font-size: 30px;
     cursor: pointer;
     position: fixed;
-
     right: 30px;
 }
 
@@ -246,7 +245,7 @@ header.smaller .navi-button{
 }
 
 #dropdown-blog-button{
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 #dropdown-contact-button{
@@ -325,6 +324,10 @@ header.smaller #navi-dropdown{
 
     .day-night-button{
         left: 10px;
+    }
+
+    .navi-font{
+        font-size: 22px;
     }
     
 }
