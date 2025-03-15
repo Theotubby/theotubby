@@ -101,7 +101,7 @@ header.smaller .main-title{
 }
 
 header.smaller .day-night-button{
-    top: 18px;
+    top: 16px;
 
 }
 
@@ -207,7 +207,7 @@ header.smaller .navi-button{
 #navi-dropdown-checkbox{
     user-select: none;
     position: fixed;
-    right: 38px;
+    right: 30px;
     margin-top: 15px;
     visibility: hidden;
 }
@@ -216,10 +216,11 @@ header.smaller .navi-button{
     user-select: none;
     background: none;
     border: none;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
     position: fixed;
-    right: 35px;
+
+    right: 30px;
 }
 
 #navi-dropdown-buttons-container{
@@ -278,7 +279,7 @@ header.smaller .navi-button{
 }
 
 header.smaller #navi-dropdown{
-    top: 10px;
+    top: 8px;
 }
 
 
@@ -311,4 +312,19 @@ header.smaller #navi-dropdown{
     #navi-dropdown{
         display: block;
     }
+}
+
+@media (max-width: 350px){
+    #navi-dropdown-checkbox{
+        right: 10px;
+    }
+    
+    #navi-dropdown-button{
+        right: 10px;
+    }
+
+    .day-night-button{
+        left: 10px;
+    }
+    
 }
