@@ -5,9 +5,8 @@ html{
 body{
     margin: 0px;
     padding: 0px;
-    font-family: Avenir Light, sans-serif;
-    font-weight: 300;
     font-family: Avenir, sans-serif;
+    font-weight: 100;
     overflow: auto;
 }
 
