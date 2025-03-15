@@ -137,7 +137,7 @@ header.smaller .day-night-button{
 
 .navi-button{
     user-select: none;
-    font-family: Avenir, sans-serif;
+    font-family: "Avenir Light", sans-serif;
     display: block;
     background: none;
     border: none;
@@ -235,7 +235,7 @@ header.smaller .navi-button{
 }
 
 .dropdown-buttons{
-    font-family: Avenir, sans-serif;
+    font-family: "Avenir Light", sans-serif;
     background: none;
     border: none;
     width: fit-content;
