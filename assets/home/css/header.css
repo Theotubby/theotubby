@@ -75,25 +75,25 @@ header.smaller .main-title{
     visibility: hidden; 
 }
 
-#mode-checkbox:checked + #mode-button #moon-icon {/* Mond verschwindet in mein Arsch*/
+#mode-checkbox:checked + #mode-button #moon-icon {
     transform: rotate(180deg);
     animation: hideVisibility 0.75s linear forwards;
     pointer-events: none; 
 }
 
-#mode-checkbox:checked + #mode-button #sun-icon { /* Sonne erscheint*/
+#mode-checkbox:checked + #mode-button #sun-icon { 
     animation: showVisibility 0.75s linear forwards;
     transform: rotate(180deg);
     pointer-events: auto;
 }
 
-#mode-checkbox:not(:checked) + #mode-button #sun-icon{ /* Sonne verschwindet */
+#mode-checkbox:not(:checked) + #mode-button #sun-icon{ 
     transform: rotate(-180deg);
     animation: hideVisibility 0.75s linear forwards;
     pointer-events: none;
 }
 
-#mode-checkbox:not(:checked) + #mode-button #moon-icon { /* Mond erscheint*/
+#mode-checkbox:not(:checked) + #mode-button #moon-icon { 
     animation: showVisibility 0.75s linear forwards;
     transform: rotate(-360deg);
     pointer-events: auto;
@@ -104,7 +104,7 @@ header.smaller .day-night-button{
 
 }
 
-@keyframes hideVisibility { /* Zurücksetzen der Werte nach Animation */
+@keyframes hideVisibility { 
     0% {
         opacity: 1;
         visibility: visible;
@@ -115,7 +115,7 @@ header.smaller .day-night-button{
     }
 }
 
-@keyframes showVisibility { /* Zurücksetzen der Werte nach Animation */
+@keyframes showVisibility { 
     0% {
         opacity: 0;
         visibility: hidden;
@@ -255,10 +255,6 @@ svg{
     margin-top: 45px;
 }
 
-#dropdown-contact-button{
-    margin-bottom: 20px;
-}
-
 .dropdown-buttons:hover .navi-underline{
     animation: widerunderline 0.15s linear forwards;
 }
@@ -274,6 +270,10 @@ svg{
 header.smaller #navi-dropdown{
     top: 17.5px;
 }
+
+/*header.smaller #dropdown-blog-button{
+    margin-top: 25px;
+}*/
 
 
 @keyframes dropdownopen {
