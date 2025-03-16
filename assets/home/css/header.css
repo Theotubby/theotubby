@@ -215,17 +215,18 @@ header.smaller .navi-button{
 #navi-dropdown-button{
     user-select: none;
     background: none;
-    border: none;
+    /*border: 1px solid #aaa;*/
     cursor: pointer;
     position: fixed;
     right: 30px;
 }
 
 #dropdown-icon{
-    margin: 10px;
+    margin-top: 7px;
+    margin-right: 4px;
 }
 
-svg {
+svg{
     border: none;
 }
 
