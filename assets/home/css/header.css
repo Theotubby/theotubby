@@ -222,7 +222,7 @@ header.smaller .navi-button{
 }
 
 #dropdown-icon {
-    font-size: 28px !important;
+    font-size: 28px !important; /* Navigation Vertical */
 }
 
 #navi-dropdown-buttons-container{
