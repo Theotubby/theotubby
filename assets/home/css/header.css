@@ -200,7 +200,7 @@ header.smaller .navi-button{
 #navi-dropdown{
     display: none;
     position: fixed;
-    top: 20px;
+    top: 23.5px;
     transition: top 0.2s linear;
 }
 
@@ -209,7 +209,7 @@ header.smaller .navi-button{
     position: fixed;
     right: 30px;
     margin-top: 15px;
-
+    visibility: hidden;
 }
 
 #navi-dropdown-button{
@@ -222,8 +222,11 @@ header.smaller .navi-button{
 }
 
 #dropdown-icon {
-    font-size: 30px;
-    display: inline-block;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
 }
 
 #navi-dropdown-buttons-container{
