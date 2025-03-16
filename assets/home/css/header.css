@@ -216,7 +216,7 @@ header.smaller .navi-button{
     user-select: none;
     background: none;
     border: none;
-    font-size: 30px !important;
+    font-size: 1.9rem;
     cursor: pointer;
     position: fixed;
     right: 30px;
