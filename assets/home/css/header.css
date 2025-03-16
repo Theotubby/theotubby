@@ -209,17 +209,21 @@ header.smaller .navi-button{
     position: fixed;
     right: 30px;
     margin-top: 15px;
-    visibility: hidden;
+
 }
 
 #navi-dropdown-button{
     user-select: none;
     background: none;
     border: none;
-    font-size: 1.9rem;
     cursor: pointer;
     position: fixed;
     right: 30px;
+}
+
+#dropdown-icon {
+    font-size: 30px;
+    display: inline-block;
 }
 
 #navi-dropdown-buttons-container{
