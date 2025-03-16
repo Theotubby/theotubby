@@ -42,7 +42,9 @@ header.smaller .main-title{
     top: 15px;
 }
 
-
+button, input[type="button"], label {
+    -webkit-tap-highlight-color: transparent;
+}
 
 /* Darkmode-Button */
 .day-night-button{
