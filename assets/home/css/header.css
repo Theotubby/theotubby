@@ -47,7 +47,7 @@ header.smaller .main-title{
 /* Darkmode-Button */
 .day-night-button{
     position: fixed;
-    top: 30px;
+    top: 32px;
     left: 30px;
     transition: top 0.2s linear;
 }
@@ -58,7 +58,7 @@ header.smaller .main-title{
 }
 
 #mode-button{
-    font-size: 25px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ header.smaller .main-title{
 }
 
 header.smaller .day-night-button{
-    top: 18px;
+    top: 19px;
 
 }
 
@@ -199,7 +199,7 @@ header.smaller .navi-button{
 #navi-dropdown{
     display: none;
     position: fixed;
-    top: 22px;
+    top: 30px;
     transition: top 0.2s linear;
 }
 
@@ -221,7 +221,6 @@ header.smaller .navi-button{
 }
 
 #dropdown-icon{
-    margin-top: 7px;
     margin-right: 2px;
 }
 
@@ -272,7 +271,7 @@ svg{
 }
 
 header.smaller #navi-dropdown{
-    top: 10px;
+    top: 17.5px;
 }
 
 
