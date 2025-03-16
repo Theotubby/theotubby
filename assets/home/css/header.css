@@ -201,7 +201,7 @@ header.smaller .navi-button{
 #navi-dropdown{
     display: none;
     position: fixed;
-    top: 30px;
+    top: 28px;
     transition: top 0.2s linear;
 }
 
@@ -223,11 +223,11 @@ header.smaller .navi-button{
 }
 
 #dropdown-icon{
-    margin-top: 1.5px;
     margin-right: 2px;
 }
 
 svg{
+    margin-left: 2px;
     border: none;
 }
 
@@ -270,7 +270,7 @@ svg{
 }
 
 header.smaller #navi-dropdown{
-    top: 17.5px;
+    top: 15px;
 }
 
 /*header.smaller #dropdown-blog-button{
