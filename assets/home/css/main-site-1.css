@@ -1,27 +1,95 @@
 #main-content-1{
   background-color: rgb(255, 250, 236);
-  height: 1000px;
-  padding-top: 110px;
-  padding-bottom: 50px;
-  border-bottom: 2px;
+  height: fit-content;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  border-bottom: 10px;
   border-color: black;
+}
+
+.main-content-title{
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  font-size: 60px;
 }
 
 #main-content-1-title{
   color: rgb(61, 61, 61);
-  margin-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 350px;
   text-align: center;
-  font-family: Satisfy, sans-serif;
 }
 
-#main-content-1-text{
-  max-width: 1000px;
-  margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+#main-content-2-title{
+  color: rgb(61, 61, 61);
+  padding-top: 80px;
+  padding-left: 350px;
   text-align: center;
-  font-family: Montserrat, sans-serif;
 }
+
+#profile-pic{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+
+    position: fixed;
+    top: 28%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+}
+
+@media (max-width: 750px){
+  #main-content-1{
+    padding-bottom: 50px;
+  }
+
+  #main-content-1-title{
+    padding-right: 320px;
+  }
+  
+  #main-content-2-title{
+    padding-top: 60px;
+    padding-left: 320px;
+  }
+  
+  .main-content-title{
+    font-size: 55px;
+  }
+
+  #profile-pic{
+    width: 220px;
+    height: 220px;
+    top: 26%;
+  }
+}
+
+@media (max-width: 600px){
+  #main-content-1{
+    padding-bottom: 45px;
+  }
+
+  #main-content-1-title{
+    padding-right: 300px;
+  }
+  
+  #main-content-2-title{
+    padding-top: 40px;
+    padding-left: 300px;
+  }
+  
+  .main-content-title{
+    font-size: 50px;
+  }
+
+  #profile-pic{
+    width: 200px;
+    height: 200px;
+    top: 24%;
+  }
+}
+
+
 

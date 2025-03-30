@@ -30,6 +30,7 @@ header.smaller {
     white-space: nowrap;
     position: fixed;
     font-family: Montserrat, sans-serif;
+    font-weight: 500;
     color: rgb(255, 250, 236);
     left: 50%;
     transform: translateX(-50%);
@@ -144,7 +145,6 @@ header.smaller .day-night-button{
 
 .navi-button{
     user-select: none;
-    font-family: Montserrat, sans-serif;
     display: block;
     background: none;
     border: none;
@@ -156,6 +156,8 @@ header.smaller .day-night-button{
 
 .navi-font{
     color: rgb(255, 250, 236);
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
     margin: 0; 
 }
 
