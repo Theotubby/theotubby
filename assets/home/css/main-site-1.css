@@ -66,30 +66,6 @@
   }
 }
 
-@media (max-width: 600px){
-  #main-content-1{
-    padding-bottom: 45px;
-  }
-
-  #main-content-1-title{
-    padding-right: 300px;
-  }
-  
-  #main-content-2-title{
-    padding-top: 40px;
-    padding-left: 300px;
-  }
-  
-  .main-content-title{
-    font-size: 50px;
-  }
-
-  #profile-pic{
-    width: 200px;
-    height: 200px;
-    top: 24%;
-  }
-}
 
 
 
