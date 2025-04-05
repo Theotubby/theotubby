@@ -76,12 +76,12 @@
 
 @media (max-width: 550px){
   #main-content-1-title{
-    margin-bottom: 250px;
+    margin-bottom: 260px;
     margin-right: 260px;
   }
   
   #main-content-2-title{
-    margin-top: 220px;
+    margin-top: 230px;
     margin-left: 260px;
   }
   
@@ -97,13 +97,34 @@
   }
 
   #main-content-1-title{
-    margin-bottom: 300px;
-    margin-right: 100px;
+    margin-bottom: 280px;
+    margin-right: 180px;
+  }
+  
+  #main-content-2-title{
+    margin-top: 260px;
+    margin-left: 180px;
+  }
+  
+  .main-content-title{
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 380px){
+  #main-content-1{
+    padding-top: 170px;
+    padding-bottom: 80px;
+  }
+
+  #main-content-1-title{
+    margin-bottom: 290px;
+    margin-right: 120px;
   }
   
   #main-content-2-title{
     margin-top: 280px;
-    margin-left: 100px;
+    margin-left: 120px;
   }
   
   .main-content-title{
