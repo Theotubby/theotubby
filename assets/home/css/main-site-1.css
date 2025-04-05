@@ -1,70 +1,116 @@
-#main-content-1{
+#main-content-1 {
   background-color: rgb(255, 250, 236);
+  padding-top: 140px;
+  padding-bottom: 50px;
   height: fit-content;
-  padding-top: 120px;
-  padding-bottom: 60px;
-  border-bottom: 10px;
-  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 10px solid black;
 }
 
 .main-content-title{
+  position: absolute;
   font-family: Oswald, sans-serif;
   font-weight: 400;
   margin: 0px;
-  font-size: 60px;
+  font-size: 80px;
+  color: rgb(61, 61, 61);
+  text-align: center;
 }
 
 #main-content-1-title{
-  color: rgb(61, 61, 61);
-  padding-right: 350px;
-  text-align: center;
+  margin-bottom: 200px;
+  margin-right: 440px;
 }
 
 #main-content-2-title{
-  color: rgb(61, 61, 61);
-  padding-top: 80px;
-  padding-left: 350px;
-  text-align: center;
+  margin-top: 200px;
+  margin-left: 400px;
 }
 
-#profile-pic{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    display: block;
-    object-fit: cover;
-
-    position: fixed;
-    top: 28%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    z-index: 2;
+#profile-pic {
+  width: 50%;
+  height: auto;
+  max-width: 280px; 
+  min-width: 250px; 
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 @media (max-width: 750px){
-  #main-content-1{
-    padding-bottom: 50px;
-  }
-
   #main-content-1-title{
-    padding-right: 320px;
+    margin-right: 400px;
   }
   
   #main-content-2-title{
-    padding-top: 60px;
-    padding-left: 320px;
+    margin-left: 370px;
   }
   
   .main-content-title{
-    font-size: 55px;
+    font-size: 70px;
   }
 
-  #profile-pic{
-    width: 220px;
-    height: 220px;
-    top: 26%;
+
+}
+
+@media (max-width: 650px){
+  #main-content-1-title{
+    margin-bottom: 280px;
+    margin-right: 260px;
+  }
+  
+  #main-content-2-title{
+    margin-top: 260px;
+    margin-left: 260px;
+  }
+  
+  .main-content-title{
+    font-size: 60px;
+  }
+
+}
+
+@media (max-width: 550px){
+  #main-content-1-title{
+    margin-bottom: 250px;
+    margin-right: 260px;
+  }
+  
+  #main-content-2-title{
+    margin-top: 220px;
+    margin-left: 260px;
+  }
+  
+  .main-content-title{
+    font-size: 60px;
   }
 }
+
+@media (max-width: 480px){
+  #main-content-1{
+    padding-top: 170px;
+    padding-bottom: 80px;
+  }
+
+  #main-content-1-title{
+    margin-bottom: 300px;
+    margin-right: 100px;
+  }
+  
+  #main-content-2-title{
+    margin-top: 280px;
+    margin-left: 100px;
+  }
+  
+  .main-content-title{
+    font-size: 60px;
+  }
+}
+
 
 
 
