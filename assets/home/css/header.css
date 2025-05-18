@@ -1,7 +1,7 @@
 header {
     position: fixed;
     text-align: center;
-    height: 120px;
+    height: 100px;
     width: 100%;
     transition: height 0.2s linear;
     border-bottom: none;
@@ -10,7 +10,7 @@ header {
 }
 
 header.smaller {
-    height: 100px;
+    height: 90px;
 }
 
 .header-background {
@@ -20,95 +20,8 @@ header.smaller {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     z-index: -1;
-}
-
-/* Darkmode-Button */
-.day-night-button{
-    position: fixed;
-    top: 50px;
-    right: 80px;
-    transition: top 0.2s linear;
-}
-
-#mode-checkbox{
-    user-select: none;
-    visibility: hidden;
-}
-
-#mode-button{
-    font-size: 22px;
-    cursor: pointer;
-}
-
-#moon-icon, #sun-icon {
-    user-select: none;
-    position: absolute;
-    font-family: 'FontAwesome';
-    display: inline-block;
-    transition: transform 1s ease-in-out, visibility 0s;
-}
-
-#moon-icon{
-    color: rgb(3, 3, 3);
-}
-
-#sun-icon {
-    opacity: 0;
-    color: rgb(0, 0, 0);
-    visibility: hidden; 
-}
-
-#mode-checkbox:checked + #mode-button #moon-icon {
-    transform: rotate(180deg);
-    animation: hideVisibility 0.75s linear forwards;
-    pointer-events: none; 
-}
-
-#mode-checkbox:checked + #mode-button #sun-icon { 
-    animation: showVisibility 0.75s linear forwards;
-    transform: rotate(180deg);
-    pointer-events: auto;
-}
-
-#mode-checkbox:not(:checked) + #mode-button #sun-icon{ 
-    transform: rotate(-180deg);
-    animation: hideVisibility 0.75s linear forwards;
-    pointer-events: none;
-}
-
-#mode-checkbox:not(:checked) + #mode-button #moon-icon { 
-    animation: showVisibility 0.75s linear forwards;
-    transform: rotate(-360deg);
-    pointer-events: auto;
-}
-
-header.smaller .day-night-button{
-    top: 35px;
-
-}
-
-@keyframes hideVisibility { 
-    0% {
-        opacity: 1;
-        visibility: visible;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-@keyframes showVisibility { 
-    0% {
-        opacity: 0;
-        visibility: hidden;
-    }
-    100% {
-        opacity: 1;
-        visibility: visible;
-    }
 }
 
 #logo{
@@ -118,13 +31,14 @@ header.smaller .day-night-button{
 }
 
 
+
 /* Navigation Horizontal*/
 .button-container{
     display: flex;
     align-items: center;
     position: fixed;
     padding: 0px 50px;
-    top: 30px;
+    top: 20px;
     transition: top 0.2s linear;
 }
 
@@ -153,7 +67,7 @@ header.smaller .day-night-button{
 }
 
 header.smaller .button-container{
-    top: 20px;
+    top: 15px;
 }
 
 .navi-button:hover .navi-underline{
@@ -264,6 +178,93 @@ header.smaller #navi-dropdown{
     }
     100% {
         height: 0px;
+    }
+}
+
+/* Darkmode-Button */
+.day-night-button{
+    position: fixed;
+    top: 40px;
+    right: 80px;
+    transition: top 0.2s linear;
+}
+
+#mode-checkbox{
+    user-select: none;
+    visibility: hidden;
+}
+
+#mode-button{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#moon-icon, #sun-icon {
+    user-select: none;
+    position: absolute;
+    font-family: 'FontAwesome';
+    display: inline-block;
+    transition: transform 1s ease-in-out, visibility 0s;
+}
+
+#moon-icon{
+    color: rgb(3, 3, 3);
+}
+
+#sun-icon {
+    opacity: 0;
+    color: rgb(0, 0, 0);
+    visibility: hidden; 
+}
+
+#mode-checkbox:checked + #mode-button #moon-icon {
+    transform: rotate(180deg);
+    animation: hideVisibility 0.75s linear forwards;
+    pointer-events: none; 
+}
+
+#mode-checkbox:checked + #mode-button #sun-icon { 
+    animation: showVisibility 0.75s linear forwards;
+    transform: rotate(180deg);
+    pointer-events: auto;
+}
+
+#mode-checkbox:not(:checked) + #mode-button #sun-icon{ 
+    transform: rotate(-180deg);
+    animation: hideVisibility 0.75s linear forwards;
+    pointer-events: none;
+}
+
+#mode-checkbox:not(:checked) + #mode-button #moon-icon { 
+    animation: showVisibility 0.75s linear forwards;
+    transform: rotate(-360deg);
+    pointer-events: auto;
+}
+
+header.smaller .day-night-button{
+    top: 34px;
+
+}
+
+@keyframes hideVisibility { 
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes showVisibility { 
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
