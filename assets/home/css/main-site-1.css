@@ -21,9 +21,9 @@
 }
 
 .blog-button-pic{
-  width: 40vw;
   aspect-ratio: 4/3;
   border-radius: 2%;
+  width: 40vw;
 }
 
 .blog-button-date{
@@ -38,16 +38,16 @@
   font-family: Quicksand, sans-serif;
   font-weight: 600;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
 }
 
 .blog-button-description{
   font-family: Quicksand, sans-serif;
   font-weight: 300;
   color: rgb(0, 0, 0);
-  width: 40vw;
   font-size: 15px;
   text-align: justify;
+  width: 40vw;
 }
 
 .blog-button-readmore{
@@ -58,7 +58,6 @@
   margin: 0;
   padding: 0;
   background: none;
-  width: 40vw;
 }
 
 @media (max-width: 700px) {
