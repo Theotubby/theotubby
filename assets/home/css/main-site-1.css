@@ -1,13 +1,13 @@
 #main-content-1 {
-  background-color: rgb(255, 250, 236);
+  background-color: rgb(178, 153, 84);
   padding-top: 140px;
-  padding-bottom: 50px;
+  padding-bottom: 5000px;
   height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 10px solid black;
+  /*border-bottom: 10px solid black;*/
 }
 
 .main-content-title{
