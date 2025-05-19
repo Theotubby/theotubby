@@ -89,14 +89,14 @@ header.smaller .button-container{
 #navi-dropdown{
     display: none;
     position: fixed;
-    top: 28px;
+    top: 34px;
     transition: top 0.2s linear;
 }
 
 #navi-dropdown-checkbox{
     user-select: none;
     position: fixed;
-    right: 30px;
+    right: 50px;
     margin-top: 15px;
     visibility: hidden;
 }
@@ -107,7 +107,7 @@ header.smaller .button-container{
     /*border: 1px solid #aaa;*/
     cursor: pointer;
     position: fixed;
-    right: 30px;
+    right: 50px;
 }
 
 #dropdown-icon{
@@ -159,7 +159,7 @@ svg{
 }
 
 header.smaller #navi-dropdown{
-    top: 15px;
+    top: 28px;
 }
 
 
@@ -181,12 +181,13 @@ header.smaller #navi-dropdown{
     }
 }
 
-/* Darkmode-Button */
+/* Darkmode-Button WIP*/ 
 .day-night-button{
     position: fixed;
     top: 40px;
     right: 80px;
     transition: top 0.2s linear;
+    visibility: hidden;
 }
 
 #mode-checkbox{
@@ -277,7 +278,7 @@ header.smaller .day-night-button{
     }
 
     #navi-dropdown{
-        display: block;
+        display: flex;
     }
 }
 

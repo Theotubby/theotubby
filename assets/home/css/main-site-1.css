@@ -1,6 +1,6 @@
 #blog{
   background-color: rgb(255, 255, 255);
-  padding-top: 170px;
+  padding-top: 140px;
   padding-bottom: 5000px;
   height: fit-content;
   display: flex;
@@ -71,7 +71,7 @@
   }
 
   .blog-button-pic{
-    width: 80vw;
+    width: 85vw;
     aspect-ratio: 4/3;
     border-radius: 2%;
   }
