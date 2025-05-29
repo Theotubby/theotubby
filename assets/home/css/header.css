@@ -107,7 +107,7 @@ header.smaller .button-container{
     /*border: 1px solid #aaa;*/
     cursor: pointer;
     position: fixed;
-    right: 50px;
+    right: 5.5vw;
 }
 
 #dropdown-icon{
@@ -288,7 +288,7 @@ header.smaller .day-night-button{
     }
     
     #navi-dropdown-button{
-        right: 10px;
+        right: 4vw;
     }
 
     .day-night-button{
