@@ -52,17 +52,11 @@ window.addEventListener("change", function() {
     if (navi_dropdown_checkbox.checked){
         header.classList.add("expanded");
         navi_dropdown_buttons_container.classList.add("expanded");
+        body.classList.add("no-scroll");
     } else {
         header.classList.remove("expanded");
         navi_dropdown_buttons_container.classList.remove("expanded");
+        body.classList.remove("no-scroll");
     }
 });
-
-window.addEventListener("change", function() {
-    if (navi_dropdown_checkbox.checked) {
-      body.classList.add("no-scroll");
-    } else {
-      body.classList.remove("no-scroll");
-    }
-  });
 
