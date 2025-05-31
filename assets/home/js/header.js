@@ -7,7 +7,6 @@ var sunIcon = document.getElementById("sun-icon");
 var moonIcon = document.getElementById("moon-icon");
 
 var header = document.querySelector(".header-container");
-var dropdowncheckbox = document.getElementById("navi-dropdown-checkbox");
 
 
 window.addEventListener("load", function() {
@@ -30,6 +29,8 @@ window.addEventListener("resize", function() {
     if(window.innerWidth >= 940){
         dropdownButtonsContainer.classList.add("no-animation");
         navidropdowncheckbox.checked = false;
+        header.classList.remove("expanded");
+        body.classList.remove("no-scroll");
     }else{
         navidropdowncheckbox.addEventListener('change', function() {
             dropdownButtonsContainer.classList.remove("no-animation");
@@ -51,7 +52,7 @@ window.addEventListener("scroll", function() {
 
 window.addEventListener("change", function() {
 
-    if (dropdowncheckbox.checked){
+    if (navidropdowncheckbox.checked){
         header.classList.add("expanded"); 
     } else {
         header.classList.remove("expanded");
