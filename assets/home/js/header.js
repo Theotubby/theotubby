@@ -1,7 +1,9 @@
+var body = document.body;
+var mode_checkbox = document.getElementById("mode-checkbox");
+
 var navi_dropdown = document.getElementById("navi-dropdown");
 var navi_dropdown_checkbox = document.getElementById("navi-dropdown-checkbox");
-var modecheckbox = document.getElementById("mode-checkbox");
-var body = document.body;
+var navi_dropdown_buttons_container = document.getElementById("navi-dropdown-buttons-container");
 
 var sunIcon = document.getElementById("sun-icon");
 var moonIcon = document.getElementById("moon-icon");
@@ -19,7 +21,7 @@ window.addEventListener("load", function() {
         navi_dropdown.classList.remove("no-animation");
     });
 
-    modecheckbox.addEventListener('change', function() {
+    mode_checkbox.addEventListener('change', function() {
         sunIcon.classList.remove("no-animation");
         moonIcon.classList.remove("no-animation");
     });
@@ -48,9 +50,11 @@ window.addEventListener("scroll", function() {
 window.addEventListener("change", function() {
 
     if (navi_dropdown_checkbox.checked){
-        header.classList.add("expanded"); 
+        header.classList.add("expanded");
+        navi_dropdown_buttons_container.classList.add("expanded");
     } else {
         header.classList.remove("expanded");
+        navi_dropdown_buttons_container.classList.remove("expanded");
     }
 });
 
