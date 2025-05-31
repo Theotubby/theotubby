@@ -24,7 +24,7 @@
 }
 
 /* Navigation Horizontal*/
-.button-container{
+#navi-button-container{
     display: flex;
     align-items: center;
     position: fixed;
@@ -57,7 +57,7 @@
     background-color: rgb(0, 0, 0); 
 }
 
-.header-container.smaller .button-container{
+.header-container.smaller #navi-button-container{
     top: 15px;
 }
 
