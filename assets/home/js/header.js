@@ -6,6 +6,9 @@ var body = document.body;
 var sunIcon = document.getElementById("sun-icon");
 var moonIcon = document.getElementById("moon-icon");
 
+var header = document.querySelector(".header-container");
+var dropdowncheckbox = document.getElementById("navi-dropdown-checkbox");
+
 
 window.addEventListener("load", function() {
     
@@ -36,13 +39,22 @@ window.addEventListener("resize", function() {
 });
 
 window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
     var scrollPosition = window.scrollY;
 
     if (scrollPosition > 100) {
         header.classList.add("smaller"); 
     } else {
         header.classList.remove("smaller");
+    }
+});
+
+
+window.addEventListener("change", function() {
+
+    if (dropdowncheckbox.checked){
+        header.classList.add("expanded"); 
+    } else {
+        header.classList.remove("expanded");
     }
 });
 
