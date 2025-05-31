@@ -1,5 +1,5 @@
-var dropdownButtonsContainer = document.getElementById("navi-dropdown-buttons-container");
-var navidropdowncheckbox = document.getElementById("navi-dropdown-checkbox");
+var navi_dropdown = document.getElementById("navi-dropdown");
+var navi_dropdown_checkbox = document.getElementById("navi-dropdown-checkbox");
 var modecheckbox = document.getElementById("mode-checkbox");
 var body = document.body;
 
@@ -10,33 +10,28 @@ var header = document.querySelector(".header-container");
 
 
 window.addEventListener("load", function() {
-    
-    dropdownButtonsContainer.classList.add("no-animation");
+
+    navi_dropdown.classList.add("no-animation");
     sunIcon.classList.add("no-animation");
     moonIcon.classList.add("no-animation");
     
-    navidropdowncheckbox.addEventListener('change', function() {
-        dropdownButtonsContainer.classList.remove("no-animation");
+    navi_dropdown_checkbox.addEventListener('change', function() {
+        navi_dropdown.classList.remove("no-animation");
     });
 
     modecheckbox.addEventListener('change', function() {
         sunIcon.classList.remove("no-animation");
         moonIcon.classList.remove("no-animation");
     });
+    
 });
 
 window.addEventListener("resize", function() {
     if(window.innerWidth >= 940){
-        dropdownButtonsContainer.classList.add("no-animation");
-        navidropdowncheckbox.checked = false;
+        navi_dropdown_checkbox.checked = false;
         header.classList.remove("expanded");
         body.classList.remove("no-scroll");
-    }else{
-        navidropdowncheckbox.addEventListener('change', function() {
-            dropdownButtonsContainer.classList.remove("no-animation");
-        });
     }
-
 });
 
 window.addEventListener("scroll", function() {
@@ -52,15 +47,15 @@ window.addEventListener("scroll", function() {
 
 window.addEventListener("change", function() {
 
-    if (navidropdowncheckbox.checked){
+    if (navi_dropdown_checkbox.checked){
         header.classList.add("expanded"); 
     } else {
         header.classList.remove("expanded");
     }
 });
 
-navidropdowncheckbox.addEventListener("change", function() {
-    if (navidropdowncheckbox.checked) {
+window.addEventListener("change", function() {
+    if (navi_dropdown_checkbox.checked) {
       body.classList.add("no-scroll");
     } else {
       body.classList.remove("no-scroll");
