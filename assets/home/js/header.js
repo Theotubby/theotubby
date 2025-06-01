@@ -10,11 +10,6 @@ const moonIcon = document.getElementById("moon-icon");
 
 const header = document.getElementById("header-container");
 
-
-window.addEventListener("load", () => {
-    document.body.classList.remove("preload");
-});
-
 window.addEventListener("resize", function() {
     if(window.innerWidth >= 940){
         navi_dropdown_checkbox.checked = false;
