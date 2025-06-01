@@ -1,0 +1,3 @@
+body.preload * {
+    transition: none !important;
+}

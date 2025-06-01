@@ -1,31 +1,18 @@
-var body = document.body;
-var mode_checkbox = document.getElementById("mode-checkbox");
+const body = document.body;
+const mode_checkbox = document.getElementById("mode-checkbox");
 
-var navi_dropdown = document.getElementById("navi-dropdown");
-var navi_dropdown_checkbox = document.getElementById("navi-dropdown-checkbox");
-var navi_dropdown_buttons_container = document.getElementById("navi-dropdown-buttons-container");
+const navi_dropdown = document.getElementById("navi-dropdown");
+const navi_dropdown_checkbox = document.getElementById("navi-dropdown-checkbox");
+const navi_dropdown_buttons_container = document.getElementById("navi-dropdown-buttons-container");
 
-var sunIcon = document.getElementById("sun-icon");
-var moonIcon = document.getElementById("moon-icon");
+const sunIcon = document.getElementById("sun-icon");
+const moonIcon = document.getElementById("moon-icon");
 
-var header = document.querySelector(".header-container");
+const header = document.getElementById("header-container");
 
 
-window.addEventListener("load", function() {
-
-    navi_dropdown.classList.add("no-animation");
-    sunIcon.classList.add("no-animation");
-    moonIcon.classList.add("no-animation");
-    
-    navi_dropdown_checkbox.addEventListener('change', function() {
-        navi_dropdown.classList.remove("no-animation");
-    });
-
-    mode_checkbox.addEventListener('change', function() {
-        sunIcon.classList.remove("no-animation");
-        moonIcon.classList.remove("no-animation");
-    });
-    
+window.addEventListener("load", () => {
+    document.body.classList.remove("preload");
 });
 
 window.addEventListener("resize", function() {
@@ -47,8 +34,7 @@ window.addEventListener("scroll", function() {
 });
 
 
-window.addEventListener("change", function() {
-
+navi_dropdown_checkbox.addEventListener("change", function() {
     if (navi_dropdown_checkbox.checked){
         header.classList.add("expanded");
         navi_dropdown_buttons_container.classList.add("expanded");
@@ -59,4 +45,6 @@ window.addEventListener("change", function() {
         body.classList.remove("no-scroll");
     }
 });
+
+
 
