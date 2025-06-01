@@ -6,6 +6,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(20px);
     z-index: 10;
+    padding-left: calc(4.5vw + 5px);
 }
 
 #header-container.smaller {
@@ -18,9 +19,12 @@
 }
 
 #logo{
+    position: fixed;
+    top: 20px;
     width: 60px;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
+    transition: top 0.25s linear;
 }
 
 /* Navigation Horizontal*/
@@ -28,9 +32,9 @@
     display: flex;
     align-items: center;
     position: fixed;
-    padding: 0px 50px;
-    top: 20px;
-    transition: top 0.2s linear;
+    padding-left: 100px;
+    transition: top 0.25s linear;
+    top: 38px;
 }
 
 .navi-button{
@@ -62,7 +66,11 @@
 }
 
 #header-container.smaller #navi-button-container{
-    top: 15px;
+    top: 32px;
+}
+
+#header-container.smaller #logo{
+    top: 14px;
 }
 
 @keyframes widerunderline{
@@ -98,7 +106,6 @@
     z-index: 10;
     cursor: pointer;
     position: fixed;
-    right: 5.5vw;
 }
 
 #dropdown-icon{
@@ -233,6 +240,13 @@ header.smaller .day-night-button{
 
     #navi-dropdown{
         display: flex;
+        right: 13vw;
+    }
+}
+
+@media (max-width: 820px) {
+    #navi-dropdown-button{
+        right: 11vw;
     }
 }
 
