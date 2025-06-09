@@ -24,7 +24,7 @@
     position: absolute;
     transition: top 0.25s linear;
     top: 20px;
-    left: calc(3vw * 2);
+    padding-left: 5vw;
 }
 
 #logo{
@@ -33,10 +33,6 @@
     aspect-ratio: 1 / 1;
     border-radius: 100%;
     transition: top 0.25s linear;
-}
-
-#top-button{
-
 }
 
 .navi-button{
@@ -229,18 +225,6 @@ header.smaller .day-night-button{
     }
 }
 
-@media (width > 1700px) {
-    #navi-button-container{
-        left: calc(0.25rem + 3vw * 2 * 1.15);
-    }
-}
-
-@media (max-width: 1440px) {
-    #navi-button-container{
-        left: calc(3vw * 1.8);
-    }
-}
-
 @media (max-width: 1024px) {
     #top-button{
         display: none;
@@ -248,30 +232,5 @@ header.smaller .day-night-button{
     
     #navi-dropdown{
         display: flex;
-    }
-
-    #navi-button-container{
-        left: calc(3vw * 1.6);
-    }
-}
-
-@media (max-width: 600px) {
-    #navi-button-container{
-        left: calc(3vw * 1.2);
-    }
-}
-
-@media (max-width: 320px){
-
-    .day-night-button{
-        left: 10px;
-    }
-
-    .navi-font{
-        font-size: 22px;
-    }
-    
-    #navi-button-container{
-        left: calc(3vw * 1.2);
     }
 }
