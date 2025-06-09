@@ -28,7 +28,7 @@ function updatePadding() {
             let scaling = 0.325;
             for (let i = 0; i < extraSteps; i++) {
                 paddingVW += scaling;
-                scaling = Math.max(0, scaling - 0.035); // wird immer um 0.01 kleiner, nie negativ
+                scaling = Math.max(0, scaling - 0.035);
             }
         } else if (width > 1500){
             const baseSteps = Math.floor((1024 - 300) / 100);
@@ -38,7 +38,7 @@ function updatePadding() {
             let scaling = 0.4;
             for (let i = 0; i < extraSteps; i++) {
                 paddingVW += scaling;
-                scaling = Math.max(0, scaling - 0.025); // wird immer um 0.01 kleiner, nie negativ
+                scaling = Math.max(0, scaling - 0.025); 
             }
         }
         navi_button_container.style.paddingLeft = paddingVW + 'vw';
