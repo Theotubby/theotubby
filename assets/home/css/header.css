@@ -18,12 +18,20 @@
 }
 
 /* Navigation Horizontal*/
+#navi-button-wrapper{
+    display: flex;
+    justify-content: center;
+}
 #navi-button-container{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    position: absolute;
+    justify-content: center;
+    position: relative;
     transition: top 0.25s linear;
     top: 20px;
+    column-gap: 20px;
+    width: fit-content;
 }
 
 #logo{
@@ -40,7 +48,6 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0px 20px;
 }
 
 .navi-font{
@@ -62,7 +69,20 @@
     animation: widerunderline 0.15s linear forwards;
 }
 
+#navi-dropdown-button{
+    user-select: none;
+    background: none;
+    z-index: 10;
+    cursor: pointer;
+    padding-bottom: 5px;
+    display: none;
+}
+
 #header-container.smaller #navi-button-container{
+    top: 15px;
+}
+
+#header-container.smaller #logo{
     top: 15px;
 }
 
@@ -93,15 +113,6 @@
     visibility: hidden;
 }
 
-#navi-dropdown-button{
-    user-select: none;
-    background: none;
-    z-index: 10;
-    cursor: pointer;
-    position: fixed;
-    right: 6.5vw;
-}
-
 #dropdown-icon{
     margin-right: 2px;
 }
@@ -130,10 +141,6 @@
 
 #dropdown-blog-button{
     margin-top: 45px;
-}
-
-#header-container.smaller #navi-dropdown{
-    top: 30px;
 }
 
 /* Darkmode-Button WIP*/ 
@@ -224,12 +231,16 @@ header.smaller .day-night-button{
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
     #top-button{
         display: none;
     }
     
     #navi-dropdown{
+        display: flex;
+    }
+
+    #navi-dropdown-button{
         display: flex;
     }
 }
