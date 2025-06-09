@@ -20,75 +20,22 @@
 
     <body>
         <header>
-            <div id="header-container">
-                <div id="navi-button-wrapper">
-                    <div id="navi-button-container">
-                        <button class="navi-button" id="blog-button">
-                            <img src="assets/home/pictures/mainpic.JPG" id="logo">
-                        </button>
-                        
-                        <input type="checkbox" class="day-night-button" id="mode-checkbox">
-                        <label class="day-night-button" for="mode-checkbox" id="mode-button">
-                            <span id="moon-icon">&#xf186;</span> 
-                            <span id="sun-icon">&#xf185;</span> 
-                        </label>
-
-                        <button class="navi-button" id="top-button">
-                            <h2 class="navi-font">BLOGS</h2>
-                            <div class="navi-underline"></div>
-                        </button>
-            
-                        <button class="navi-button" id="top-button">
-                            <h2 class="navi-font">PROJEKTE</h2>
-                            <div class="navi-underline"></div>
-                        </button>
-            
-                        <button class="navi-button" id="top-button">
-                            <h2 class="navi-font">ÜBER MICH</h2>
-                            <div class="navi-underline"></div>
-                        </button>
-            
-                        <button class="navi-button" id="top-button">
-                            <h2 class="navi-font">KONTAKT</h2>
-                            <div class="navi-underline"></div>
-                        </button>
-                        
-                        <input type="checkbox" id="navi-dropdown-checkbox">
-                        <label for="navi-dropdown-checkbox" id="navi-dropdown-button">
-                            <svg id="dropdown-icon" width="20" height="25" viewBox="0 0 45 30">
-                                <rect y="0" width= 100% height="5"></rect>
-                                <rect y="18" width= 100% height="5"></rect>
-                                <rect y="36" width= 100% height="5"></rect>
-                            </svg>                    
-                        </label>
+            <nav id="nav-container">
+                <ul id="nav-horizontal">
+                    <div id="header-logo">
+                    <img src="assets/home/pictures/mainpic.JPG" alt="Theotubby Logo" id="logo">
                     </div>
-                </div>
-                
 
-                <div id="navi-dropdown">
-                    <div id="navi-dropdown-buttons-container">
-                        <button class="navi-button" id="dropdown-button">
-                            <h2 class="navi-font">JOURNAL</h2>
-                            <div class="navi-underline"></div>
-                        </button>
-            
-                        <button class="navi-button" id="dropdown-button">
-                            <h2 class="navi-font">PROJEKTE</h2>
-                            <div class="navi-underline"></div>
-                        </button>
-            
-                        <button class="navi-button" id="dropdown-button">
-                            <h2 class="navi-font">ÜBER MICH</h2>
-                            <div class="navi-underline"></div>
-                        </button>
-            
-                        <button class="navi-button" id="dropdown-button">
-                            <h2 class="navi-font">KONTAKT</h2>
-                            <div class="navi-underline"></div>
-                        </button>
-                    </div>
-                </div>
-            </div>
+                    <li class="header-menu-item"><a href="#">Blog</a></li>
+                    <li class="header-menu-item"><a href="#">Projekte</a></li>
+                    <li class="header-menu-item"><a href="#">Über mich</a></li>
+                    <li class="header-menu-item"><a href="#">Kontakt</a></li>
+                </ul>
+
+                <ul id="nav-vertical">
+                    <li class="header-menu-item"><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
         </header>
 
         <div id="blog">

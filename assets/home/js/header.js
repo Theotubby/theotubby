@@ -8,14 +8,15 @@ const navi_dropdown_buttons_container = document.getElementById("navi-dropdown-b
 const sunIcon = document.getElementById("sun-icon");
 const moonIcon = document.getElementById("moon-icon");
 
-const header = document.getElementById("header-container");
+const header = document.getElementById("nav-container");
 const navi_button_container = document.getElementById("navi-button-container");
 
 window.addEventListener("resize", function() {
-    if(window.innerWidth >= 940){
+    if(window.innerWidth >= 800){
         navi_dropdown_checkbox.checked = false;
         header.classList.remove("expanded");
         body.classList.remove("no-scroll");
+        navi_dropdown_buttons_container.classList.remove("expanded");
     }
     updatePadding();
 });
